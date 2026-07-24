@@ -1,8 +1,15 @@
 aid: centivo
 name: Centivo
-description: 'Centivo is a company surfaced as a portfolio company of bain-capital-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Centivo is a primary-care-centered health plan administrator for self-funded
+  employers, founded in 2017 and headquartered in New York City. Sold through benefits
+  brokers and consultants, it serves mid-market employers (roughly 50 or more employees)
+  and covers about 77,000 members across 160 businesses. Members get $0 primary care
+  to encourage early intervention, and employers typically save 15-30% versus traditional
+  fully-insured plans through a primary-care-first model, the cost advantages of self-funding,
+  and directly negotiated health-system partnerships. Centivo operates member, employer,
+  provider, and referral portals plus iOS/Android member apps; it does not publish
+  a public developer API. Backed by Bain Capital Ventures and JPMorgan Chase''s Morgan
+  Health.'
 url: https://raw.githubusercontent.com/api-evangelist/centivo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +17,29 @@ x-backed-by:
 - bain-capital-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://centivo.com/wp-content/uploads/2026/01/CentivoLogo.png
 tags:
 - Company
 - Healthcare
+- Health Insurance
+- Health Plans
+- Employee Benefits
+- Self-Funded
+- Primary Care
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/centivo-domain-security.yml
 - type: Website
   url: https://centivo.com/
+- type: Login
+  url: https://centivo.com/member-login/
+- type: Support
+  url: https://centivo.com/for-members/current-members/
+- type: Blog
+  url: https://centivo.com/news/
+- type: TermsOfService
+  url: https://centivo.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://centivo.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
